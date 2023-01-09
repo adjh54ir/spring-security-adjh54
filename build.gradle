@@ -13,8 +13,31 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter'
+
+    // [Global Level]
+    implementation 'org.springframework.boot:spring-boot-starter-web'               // Spring Boot Web
+    implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'         // Spring Boot JDBC + HikariCP
+    implementation 'org.springframework.boot:spring-boot-starter-validation'        // Spring Boot validation
+    implementation 'org.springframework.boot:spring-boot-starter-security'          // Spring Security
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2'      // Spring Boot MyBatis
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'         // Thymeleaf Template
+
+    // [Open Source]
+    implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:3.1.0'         // Thymeleaf Layout
+    implementation "com.googlecode.json-simple:json-simple:1.1.1"                   // Google Simple JSON
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.4.2'           // Jackson Databind
+    implementation "io.jsonwebtoken:jjwt:0.9.1"                                     // Spring Json-Web-Token
+
+    // [Compile & runtime Level]
+    compileOnly 'org.projectlombok:lombok'
+    runtimeOnly 'org.postgresql:postgresql'
+
+    // [Annotation Level]
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+    annotationProcessor 'org.projectlombok:lombok'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.9.1'
 }
 
 tasks.named('test') {
