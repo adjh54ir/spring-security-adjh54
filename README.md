@@ -8,7 +8,7 @@
 
 ----
 
-### 1.1. Spring Boot Architecture
+### 1.1. Spring Boot Architecture 
 
     ⭕️ 전체적인 아키텍처 패턴은 Spring MVC Pattern으로 구성하였습니다.
 
