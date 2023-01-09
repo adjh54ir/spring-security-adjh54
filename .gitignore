@@ -2,9 +2,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,intellij,eclipse,java,gradle
 
 # 개인 환경 파일 제외
-/src/main/resources/config/application-multiflex-local.yml
-/src/main/resources/config/application-multiflex-qa.yml
-/src/main/resources/config/application-multiflex-prd.yml
+/src/main/resources/config/application-sprsecurity-local.yml
 
 ### Eclipse ###
 .metadata
